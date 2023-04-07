@@ -1,13 +1,11 @@
 package restaurant;
 
 public class MenuItem {
-
     private String name;
     private String description;
     private String category;
     private Double price;
     private boolean isNew;
-
     public MenuItem (String name, String description, String category, Double price, boolean isNew) {
         this.name = name;
         this.description = description;
@@ -15,11 +13,9 @@ public class MenuItem {
         this.price = price;
         this.isNew = isNew;
     }
-
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -31,7 +27,6 @@ public class MenuItem {
     public void setDescription(String description) {
         this.description = description;
     }
-
     public String getCategory() {
         return category;
     }
@@ -56,5 +51,7 @@ public class MenuItem {
         isNew = aNew;
     }
 
-
+    public boolean isEqual(MenuItem item) {
+        return false;
+    }
 }
